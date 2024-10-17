@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>PRODUCTOS DEPORTIVOS</h1>
+    </header>
+    <main>
+        <section id="Seleccione">
+            <h2>Seleccione</h2>
+            <ul>
+                <li>
+                    <input type="text" id="nombre-producto" placeholder="Nombre del producto">
+                    <input type="number" id="precio-producto" placeholder="Precio del producto">
+                    <button id="btn-agregar-producto">Agregar</button>
+                </li>
+            </ul>
+        </section>
+        <section id="ventas">
+            <h2>Ventas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-ventas">
+                </tbody>
+            </table>
+        </section>
+        <section id="total">
+            <h2>Total:</h2>
+            <p id="total-ventas">$0.00</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
